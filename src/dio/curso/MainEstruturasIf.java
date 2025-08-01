@@ -2,7 +2,7 @@ package dio.curso;
 
 import java.util.Scanner;
 
-public class MainEstruturas {
+public class MainEstruturasIf {
 
     public static void main(String[] args){
 
