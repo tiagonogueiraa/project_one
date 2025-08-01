@@ -7,7 +7,7 @@ public class MainKeywords {
     public static void main(String[] args){
 
         float number = 1.0f;
-        var number1 = 1.0;
+        double number1 = 1.0;
 
         char character = 'a';
         System.out.println("number ->"+ number);
@@ -16,12 +16,12 @@ public class MainKeywords {
 
         // operadores em java
 
-        var scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Quanto é 2 = 2 ?");
 
-        var result = scanner.nextInt();
-        var isRight = result == 4;
+        int result = scanner.nextInt();
+        boolean isRight = result == 4;
 
 
         System.out.printf("O resultado é 4, você acertou? (%s) \n", isRight);
@@ -33,12 +33,12 @@ public class MainKeywords {
 
 
         System.out.println("Quantos anos você tem?");
-        var age = scanner.nextInt();
+        int age = scanner.nextInt();
 
         System.out.println("Você é emancipado?");
-        var isEmancipated = scanner.nextBoolean();
+        boolean isEmancipated = scanner.nextBoolean();
 
-        var canDrive = age >= 17 || (isEmancipated && age >= 16);
+        boolean canDrive = age >= 17 || (isEmancipated && age >= 16);
 
         System.out.printf("Você pode digigir? %s \n", canDrive);
 

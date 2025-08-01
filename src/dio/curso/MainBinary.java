@@ -4,37 +4,37 @@ public class MainBinary {
 
     public static void main(String[] args){
 
-        var value1 = 60;
-        var binary1 = Integer.toBinaryString(value1);
+        int value1 = 60;
+        String binary1 = Integer.toBinaryString(value1);
 
         System.out.printf("Primeiro número da operação %s (representacao binária %s) \n", value1, binary1);
 
-        var value2 = 85;
-        var binary2 = Integer.toBinaryString(value1);
+        int value2 = 85;
+        String binary2 = Integer.toBinaryString(value2);
 
         System.out.printf("Segundo número da operação %s (representacao binária %s) \n", value2, binary2);
 
 
-        var result = value1 | value2;
+        int result = value1 | value2;
 
-        var binaryResult = Integer.toBinaryString(result);
+        String binaryResult = Integer.toBinaryString(result);
 
         System.out.printf("%s | %s = %s (representação binária %s )\n", value1, value2, result, binaryResult);
 
-        var result2 = value1 << value2;
+        int result2 = value1 << value2;
 
-        var binaryResult2 = Integer.toBinaryString(result);
+        String binaryResult2 = Integer.toBinaryString(result2);
 
         System.out.printf("%s << %s = %s (representação binária %s )\n", value1, value2, result2, binaryResult2);
 
-        var result3 = value1 >>> value2;
+        int result3 = value1 >>> value2;
 
-        var binaryResult3 = Integer.toBinaryString(result);
+        String binaryResult3 = Integer.toBinaryString(result3);
 
         System.out.printf("%s >>> %s = %s (representação binária %s )\n", value1, value2, result3, binaryResult3);
 
-        var num1 = 6;
-        var num2 = 12;
+        int num1 = 6;
+        int num2 = 12;
         System.out.println("\nOperações bitwise:");
         System.out.println("AND (&):  " + (num1 & num2) + " = " + Integer.toBinaryString(num1 & num2));
         System.out.println("OR  (|):  " + (num1 | num2) + " = " + Integer.toBinaryString(num1 | num2));

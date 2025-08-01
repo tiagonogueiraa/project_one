@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class MainEstruturaFor {
 
     public static void main(String[]  args) {
-        var scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        for(var i = 1; i <= 100; i++){
+        for(int i = 1; i <= 100; i++){
 
             if(i % 2 == 0) continue;
             System.out.println("->"+ i);
@@ -18,7 +18,7 @@ public class MainEstruturaFor {
 
         }
 
-        for (var i = 0; i < args.length; i++){
+        for (int i = 0; i < args.length; i++){
             System.out.println("["+i+"]" + "->" +args[i]);
         }
 

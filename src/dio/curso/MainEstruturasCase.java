@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class MainEstruturasCase {
 
     public static void main(String[]  args){
-        var scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Informe um número de 1 até 7");
 
-        var option = scanner.nextInt();
+        int option = scanner.nextInt();
         switch (option) {
             case 1:
                 System.out.println("Domingo");
@@ -36,29 +36,32 @@ public class MainEstruturasCase {
                 break;
         }
 
+        String message;
         switch (option) {
-            case 1 -> System.out.println("Domingo");
-            case 2 -> System.out.println("Segunda");
-            case 3 -> System.out.println("Terça");
-            case 4 -> System.out.println("Quarta");
-            case 5 -> System.out.println("Quinta");
-            case 6 -> System.out.println("Sexta");
-            case 7 -> System.out.println("Sábado");
-            default -> System.out.println("Opção inválida.");
+            case 1:
+            case 7:
+                String day = option == 1 ? "Domingo" : "Sábado";
+                message = String.format("Hoje é %s, fim de semana \\o//", day);
+                break;
+            case 2:
+                message = "Segunda";
+                break;
+            case 3:
+                message = "Terça";
+                break;
+            case 4:
+                message = "Quarta";
+                break;
+            case 5:
+                message = "Quinta";
+                break;
+            case 6:
+                message = "Sexta";
+                break;
+            default:
+                message = "Opção inválida.";
+                break;
         }
-
-        var message = switch (option) {
-            case 1, 7 -> {
-                var day = option == 1 ? "Domingo" : "Sábado";
-                yield String.format("Hoje é %s, fim de semana \\o//", day);
-            }
-            case 2 -> "Segunda";
-            case 3 -> "Terça";
-            case 4 -> "Quarta";
-            case 5 -> "Quinta";
-            case 6 -> "Sexta";
-            default -> "Opção inválida.";
-        };
 
         System.out.println(message);
     }

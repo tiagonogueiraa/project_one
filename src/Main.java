@@ -11,11 +11,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         //System.out.println("Olá, Informe o seu nome:");
         System.out.println(WELCOME_MESSAGE);
-        //String name = scanner.next();
-        var name = scanner.next();
+        String name = scanner.next();
         System.out.println("Olá, Informe a sua idade:");
-        //int age = scanner.nextInt();
-        var age = scanner.nextInt();
+        int age = scanner.nextInt();
 
         //System.out.println("Olá " + name + " sua idade é " + age + ".");
         System.out.printf("Olá %s sua idade é %s \n", name, age);

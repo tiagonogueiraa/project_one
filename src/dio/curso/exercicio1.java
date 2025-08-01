@@ -11,14 +11,14 @@ public class exercicio1 {
         // calculo da idade
 
         //var baseYear = 2025;
-        var baseYear = OffsetDateTime.now().getYear();
+        int baseYear = OffsetDateTime.now().getYear();
         System.out.println("Informe o seu nome:");
 
-        var name = scanner.nextLine();
+        String name = scanner.nextLine();
 
         System.out.println("Informe o seu ano de nascimento");
-        var year = scanner.nextInt();
-        var age = baseYear - year;
+        int year = scanner.nextInt();
+        int age = baseYear - year;
         System.out.printf("Olá %s você tem %s anos \n", name, age);
 
 

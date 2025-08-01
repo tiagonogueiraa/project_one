@@ -6,8 +6,8 @@ public class MainEstruturaWhile {
 
     public static void main(String[]  args) {
 
-        var scanner = new Scanner(System.in);
-        var name = "";
+        Scanner scanner = new Scanner(System.in);
+        String name = "";
 
         while(!name.equals("exit")){
             System.out.println("Informe um nome:");
